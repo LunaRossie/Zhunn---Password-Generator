@@ -4,42 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Password Generator with Javascript</title>
-    <link rel="stylesheet" href="./password.css">
+    <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
   </head>
   <body>
-    
-    <!-- Password wrapper -->
+    <div class="wrapper">
       <header>
         <h1>Password Generator</h1>
       </header>
-      <div class="password-wrapper">
-        <p>Generate New Password Text</p>
-      
+      <div class="card">
+        <div class="card-header">
+          <h2>Generate a Password</h2>
+        </div>
         <div class="card-body">
-          <input type="text" placeholder="Enter the Password" id="password" />
-          <button type="button">Generate Password</button>
-          </div>  <! -- End of Password Wrapper -- >
-
-          <i class="fa fa-key"></i>
-            <span class="eye" onclick="myFunction()">
-              <i id="hide1" class="fa fa-eye"></i>
-              <i id="hide2" class="fa fa-eye-slash"></i>
-            </span>
+          <textarea
+            readonly
+            id="password"
+            placeholder="Your Secure Password"
+            aria-label="Generated Password"
+          ></textarea>
         </div>
         <div class="card-footer">
           <button id="generate" class="btn">Generate Password</button>
         </div>
-     
-      
-      
-      <script>
-        console.log("It works....");
-      </script>
-
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

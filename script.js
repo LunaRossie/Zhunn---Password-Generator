@@ -15,29 +15,29 @@ let confirmNumericCharacter;
 
 
 function generatePassword() {
-  let confirmLength = (prompt("How many characters would you like your password to contain?"));
+  let confirmLength = (prompt("How many characters do you want your password to contain?"));
 
 
   while(confirmLength <= 9 || confirmLength >= 81) {
       alert("Password length must be between 10-80 characters Try again");
-      let confirmLength = (prompt("How many characters would you like your password to contain?"));
+      let confirmLength = (prompt("How many characters do you want your password to contain?"));
       } 
 
       
       alert(`Your password will have ${confirmLength} characters`);
 
     
-    let confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include numeric characters");
-    let confirmNumericCharacter = confirm("Click OK to confirm if you would like to include special characters");    
-    let confirmLowerCase = confirm("Click OK to confirm if you would like to include uppercase characters");
-    let confirmUpperCase = confirm("Click OK to confirm if you would like to include lowercase characters");
+    let confirmNumericCharacter = confirm("Click OK to confirm if you want to include numeric characters");  
+    let confirmSpecialCharacter = confirm("Click OK to confirm if you want to include special characters");  
+    let confirmUpperCase = confirm("Click OK to confirm if you want to include uppercase characters");
+    let confirmLowerCase = confirm("Click OK to confirm if you want to include lowercase characters");
       
       while(confirmUpperCase === false && confirmLowerCase === false && confirmSpecialCharacter === false && confirmNumericCharacter === false) {
         alert("You must choose at least one parameter");
-        let confirmSpecialCharacter = confirm("Click OK to confirm if you would like to include numeric characters");
-        let confirmNumericCharacter = confirm("Click OK to confirm if you would like to include special characters");    
-        let confirmLowerCase = confirm("Click OK to confirm if you would like to include uppercase characters");
-        let confirmUpperCase = confirm("Click OK to confirm if you would like to include lowercase characters");   
+        let confirmNumericCharacter = confirm("Click OK to confirm if you want to include numeric characters");   
+        let confirmSpecialCharacter = confirm("Click OK to confirm if you want to include special characters"); 
+        let confirmUpperCase = confirm("Click OK to confirm if you want to include uppercase characters");
+        let confirmLowerCase = confirm("Click OK to confirm if want like to include lowercase characters");   
     } 
 
       
